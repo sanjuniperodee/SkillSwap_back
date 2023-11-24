@@ -32,6 +32,8 @@ class GetJob(APIView):
         return Response(json.loads(data)[0], status=200)
 
 
+
+
 class EnrollView(APIView):
     def post(self, request, userPK, jobPK):
         print(userPK, jobPK)
